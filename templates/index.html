@@ -1,1 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block body %}
 <h1>Hello, Ombro, from a template!</h1>
+
+<form action="/download" method="POST">
+    <input type="text" name="download_url">
+    <input type="submit">
+</form>
+
+{% endblock %}
