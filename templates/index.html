@@ -6,6 +6,7 @@ Home
 
 {% block body %}
 <h1>Hello, Ombro, from a template!</h1>
+<p>Download started: {{ context.download_name }}</p>
 
 <form action="/download" method="POST">
     <input type="text" name="download_url">
